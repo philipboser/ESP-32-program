@@ -9,3 +9,10 @@ I will be adding a teamviewer link to connect to a remote environment with the E
 
 
 Borrowed code from [ESP Jumpstart](https://github.com/espressif/esp-jumpstart) it's a skeleton of an IOT device for people getting started. Great resource!
+
+TO DO:
+
+1) modify borrowed code to remove deprecated functions (wifi_prov_mgr_event_handler)
+2) improve provisioning event handler and wifi event handler to better handle losses/changes in internet connection
+3) ....
+4) Profit!
