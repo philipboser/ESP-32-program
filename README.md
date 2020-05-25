@@ -6,3 +6,6 @@ This is the firmware used in our smart lock. It runs on the ESP 32  and is progr
 Please check [ESP-IDF docs](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/index.html) for getting started instructions.
 
 I will be adding a teamviewer link to connect to a remote environment with the ESP-IDF installed and an ESP-32 microcontroller connected  in the near future to be used as a sandbox for development.
+
+
+Borrowed code from [ESP Jumpstart](https://github.com/espressif/esp-jumpstart) it's a skeleton of an IOT device for people getting started. Great resource!
