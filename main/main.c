@@ -6,6 +6,8 @@
    software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
    CONDITIONS OF ANY KIND, either express or implied.
 */
+
+//#include "stddef.h"
 #include <stdio.h>
 #include <string.h>
 #include <freertos/FreeRTOS.h>
@@ -25,10 +27,6 @@ static const char *TAG = "app_main";
 
 static esp_err_t event_handler(void *ctx, system_event_t *event)
 {
-    /* Pass event information to conn_mgr_prov so that it can
-     * maintain it's internal state depending upon the system event */
-    wifi_prov_mgr_event_handler(ctx, event);
-
     /* Global event handler */
     switch (event->event_id) {
     case SYSTEM_EVENT_STA_START:
@@ -202,9 +200,13 @@ void app_main()
         uint8_t custom_service_uuid[] = {
             /* LSB <---------------------------------------
              * ---------------------------------------> MSB */
-            0x21, 0x43, 0x65, 0x87, 0x09, 0xba, 0xdc, 0xfe,
-            0xef, 0xcd, 0xab, 0x90, 0x78, 0x56, 0x34, 0x12
+            0x40, 0x71, 0xee, 0x8a, 0x74, 0x18, 0xd3, 0x9d,
+            0x12, 0x4a, 0x37, 0x40, 0x1b, 0x86, 0x75, 0xfa
+
+            // 0x21, 0x43, 0x65, 0x87, 0x09, 0xba, 0xdc, 0xfe,
+            // 0xef, 0xcd, 0xab, 0x90, 0x78, 0x56, 0x34, 0x12
         };
+
         wifi_prov_scheme_ble_set_service_uuid(custom_service_uuid);
 
         /* Start provisioning service */

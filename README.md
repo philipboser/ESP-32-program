@@ -12,7 +12,7 @@ Borrowed code from [ESP Jumpstart](https://github.com/espressif/esp-jumpstart) i
 
 TO DO:
 
-1) modify borrowed code to remove deprecated functions (wifi_prov_mgr_event_handler)
+1) ~~modify borrowed code to remove deprecated functions (wifi_prov_mgr_event_handler)~~ removed
 2) improve provisioning event handler and wifi event handler to better handle losses/changes in internet connection
 3) ....
 4) Profit!
