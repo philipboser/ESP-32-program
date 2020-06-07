@@ -20,6 +20,7 @@ TO DO:
     * lock
     * camera
     * mic (may be tough with limited memory taken by camera)
-6) design enclosure for prototype
-7) ....
-8) Profit!
+6) send/receive telemetry between device drivers and cloud
+7) design enclosure for prototype
+8) ....
+9) Profit!
