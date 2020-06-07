@@ -17,9 +17,9 @@ TO DO:
 3) connect to Azure and do a "Hello World"
 4) obtain perriferal components (cam/lock/mic)
 5) start programming drivers:
-    *lock
-    *camera
-    *mic (may be tough with limited memory taken by camera)
+    * lock
+    * camera
+    * mic (may be tough with limited memory taken by camera)
 6) design enclosure for prototype
 7) ....
 8) Profit!
