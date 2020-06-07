@@ -15,5 +15,11 @@ TO DO:
 1) ~~modify borrowed code to remove deprecated functions (wifi_prov_mgr_event_handler)~~ removed
 2) ~~improve provisioning event handler and wifi event handler to better handle losses/changes in internet connection~~ will implement factory reset functionality later for this purpose
 3) connect to Azure and do a "Hello World"
-4) ....
-5) Profit!
+4) obtain perriferal components (cam/lock/mic)
+5) start programming drivers:
+    -lock
+    -camera
+    -mic (may be tough with limited memory taken by camera)
+6) design enclosure for prototype
+7) ....
+8) Profit!
