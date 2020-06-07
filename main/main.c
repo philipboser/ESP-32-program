@@ -21,6 +21,15 @@
 #include <wifi_provisioning/scheme_ble.h>
 #include <wifi_provisioning/scheme_softap.h>
 
+#include "azure_c_shared_utility/platform.h"
+#include "azure_c_shared_utility/threadapi.h"
+#include "azure_c_shared_utility/shared_util_options.h"
+
+#include "iothub.h"
+#include "iothub_device_client.h"
+#include "iothub_message.h"
+#include "iothub_client_options.h"
+
 #define SERV_NAME_PREFIX    "PROV_"
 
 static const char *TAG = "app_main";
@@ -97,6 +106,8 @@ static void get_device_service_name(char *service_name, size_t max)
     snprintf(service_name, max, "%s%02X%02X%02X",
              SERV_NAME_PREFIX, eth_mac[3], eth_mac[4], eth_mac[5]);
 }
+
+bool send_amqp(char message[256]);
 
 void app_main()
 {
@@ -227,4 +238,15 @@ void app_main()
         /* Start Wi-Fi station */
         wifi_init_sta();
     }
+
+
+}
+
+
+bool send_amqp(char message[256]){
+
+    //IoTHub_Init();
+
+    
+    return(0);
 }
