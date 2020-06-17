@@ -21,8 +21,6 @@
 #include <wifi_provisioning/scheme_ble.h>
 #include <wifi_provisioning/scheme_softap.h>
 
-#include "keys.h"
-
 #include "azure_c_shared_utility/platform.h"
 #include "azure_c_shared_utility/threadapi.h"
 #include "azure_c_shared_utility/shared_util_options.h"
@@ -240,7 +238,6 @@ void app_main()
         /* Start Wi-Fi station */
         wifi_init_sta();
     }
-
 
 }
 

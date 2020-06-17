@@ -1,3 +1,3 @@
 /Build/*
 .vscode/settings.json
-main/keys.h
+main/Kconfig.projbuild
